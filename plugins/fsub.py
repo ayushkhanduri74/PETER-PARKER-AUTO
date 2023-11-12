@@ -9,7 +9,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 from database.join_reqs import JoinReqs
 from info import REQ_CHANNEL, AUTH_CHANNEL, JOIN_REQS_DB, ADMINS 
-from commands import *
+from utils import get_settings, get_size, is_subscribed, save_group_settings, temp
 
 from logging import getLogger
 
