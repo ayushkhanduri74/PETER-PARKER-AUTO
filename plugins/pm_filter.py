@@ -120,7 +120,7 @@ async def next_page(bot, query):
                 for file in files
             ]
         else:
-          btn = [
+             btn = [
                 [
                     InlineKeyboardButton(
                         text=f"{file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
@@ -133,7 +133,7 @@ async def next_page(bot, query):
                 for file in files
             ]
     else:
-                if settings['button']:
+        if settings['button']:
             btn = [
                 [
                     InlineKeyboardButton(
